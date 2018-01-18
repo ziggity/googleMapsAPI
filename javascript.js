@@ -36,7 +36,7 @@ function calcRoute(){
     if(status == google.maps.DirectionsStatus.OK){
 
         //Get distance and time
-        $("#output").html("<div class='alert-info'>From: "+ document.getElementById("from").value[0].toUpperCase() + document.getElementById("from").value.slice(1) + ".<br />To: "+document.getElementById("to").value.charAt(0).toUpperCase() + document.getElementById("to").value.slice(1)+".<br /> Driving distance: "+result.routes[0].legs[0].distance.text+".<br />Duration: "+result.routes[0].legs[0].duration.text + ".<br /> The highway you're going to is: " +result.routes[0].summary +".</div>");
+        $("#output").html("<div class='alert-info'>From: "+ document.getElementById("from").value[0].toUpperCase() + document.getElementById("from").value.slice(1) + ".<br />To: "+document.getElementById("to").value.charAt(0).toUpperCase() + document.getElementById("to").value.slice(1)+".<br /> Driving distance: "+result.routes[0].legs[0].distance.text+".<br />Duration: "+result.routes[0].legs[0].duration.text + ".<br /> The road you're going to is: " +result.routes[0].summary +".</div>");
         console.log(result)
 
         //display route
@@ -48,7 +48,7 @@ function calcRoute(){
         map.setCenter(myLatLng);
 
         //show error message
-        $("#output").html("<div class='alert-danger'>Could not retrieve driving distance.</div>");
+        $("#output").html("<div class='alert-danger'>Could not retrieve distance.</div>");
     }
     });
 

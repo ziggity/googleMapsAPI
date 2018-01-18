@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Driving Distance Between Cities App</title>
+    <title>Seattle Meetup Finder App</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" rel="stylesheet">
     <link href="styling.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 
@@ -21,11 +21,32 @@
     <![endif]-->
   </head>
   <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                  <a href="#!" class="brand-logo">Seattle Meetup Finder App</a>
+                  <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Home</a></li>
+                    <li><a href="badges.html">Best Meetups in Seattle</a></li>
+                    <li><a href="collapsible.html">About</a></li>
+                    <li><a href="mobile.html">Contact</a></li>
+                  </ul>
+                  <ul class="side-nav" id="mobile-demo">
+                    <li><a href="sass.html">Home</a></li>
+                    <li><a href="badges.html">Best Meetups in Seattle</a></li>
+                    <li><a href="collapsible.html">About</a></li>
+                    <li><a href="mobile.html">Contact</a></li>
+                  </ul>
+                </div>
+            
+              </nav>
+            </div>
 
       <div class="jumbotron">
           <div class="container-fluid">
-              <h1>Driving Distance Between Cities App.</h1>
-              <p>Our app will help you calculate travelling distances.</p>
+              <h1>Seattle Meetup Finder App.</h1>
+              <p>Find meetups near you!</p>
               <form class="form-horizontal">
                   <div class="form-group">
                       <label for="from" class="col-xs-2 control-label">From:</label>
@@ -60,7 +81,6 @@
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRCXFCfrfaBTgSVlxWTbF8FYiVJq1xUho&libraries=places"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
       <script src="javascript.js"></script>
   </body>
 </html>
